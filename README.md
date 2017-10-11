@@ -24,3 +24,5 @@ Things you may want to cover:
 * ...
 
 * Test updating GitHub
+
+* Test #2
