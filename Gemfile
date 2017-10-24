@@ -53,3 +53,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
+#These two lines are the same.  One is taking it from rubygems and the other from github.
+#gem 'soderstrom_view_tool', git: 'https://github.com/Mordon327/soderstrom_view_tool'
+gem 'soderstrom_view_tool', '~> 0.1.0'
