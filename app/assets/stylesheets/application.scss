@@ -166,6 +166,14 @@ body {
  text-align: right;
  }
 
+.login > .card {
+  width: 40%;
+  margin: 0 auto;
+  float: none;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 @media (min-width: 40em) {
   /* Pull out the header and footer */
   .masthead {
