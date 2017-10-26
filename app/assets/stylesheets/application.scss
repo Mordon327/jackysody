@@ -128,8 +128,43 @@ body {
 
 
 /*
- * Affix and center
+ * Custom Styles
  */
+
+ .card-block {
+ color: black;
+ text-align: left;
+ }
+
+ .card-block a {
+  color: black;  
+}
+
+ .card {
+  margin-top: 10%;
+  margin-bottom: 13%;
+ }
+
+.card-block-no-center {
+  color: black;
+  padding: 5%;
+}
+
+.card-block-no-center a {
+  color: black;  
+}
+
+.card-block-no-center a:hover {
+  color: blue;  
+}
+
+ .auth-links a {
+ color: black;
+ }
+
+.register-text a {
+ text-align: right;
+ }
 
 @media (min-width: 40em) {
   /* Pull out the header and footer */
