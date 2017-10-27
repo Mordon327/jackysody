@@ -16,25 +16,19 @@
 <body>
 
   <%= render "shared/blog_nav" %>
-
-  
   <%= render "shared/blog_masthead" %>
-  
 
   <div class="container">
-
     <div class="row">
 
       <%= yield %>
-
-      
       <%= render 'shared/blog_sidebar' %>
-    
-</div>
-    <%= render 'shared/blog_footer' %>
 
+    </div>
+
+    <%= render 'shared/blog_footer' %>
     <%= source_helper("Blog") %>
-  
-</div>
+    
+  </div>
 </body>
 </html>
