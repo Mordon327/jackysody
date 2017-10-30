@@ -9,6 +9,10 @@ class Portfolio < ApplicationRecord
 		where(subtitle: 'Angular')
 	end
 
+	def self.by_position
+		order("position ASC")
+	end
+
 	#custom scope.  Place the scope name ruby_on_rails_portfolio_items in the portfolios_controller rb in the index function as Portfolio.ruby_on_rails_portfolio_items instead of Portfolio.all
 	scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on rails')}
 
