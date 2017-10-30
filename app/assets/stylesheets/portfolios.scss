@@ -78,10 +78,6 @@ footer p {
   Align-items: center;
 }
 
-.navbar-toggler {
-
-}
-
 @media (min-width: 768px) {
   .navbar-nav {
     display: -webkit-box;
@@ -97,6 +93,8 @@ footer p {
             flex: 1 0 auto;
   }
 }
+
+/* custom */
 
 
 .center-this {
@@ -115,6 +113,10 @@ footer p {
   display: flex;
   justify-content: center;
   Align-items: center;
-
 }
+
+.portfolio-form {
+  padding: 20px;
+}
+
 
