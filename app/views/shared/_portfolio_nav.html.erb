@@ -7,12 +7,9 @@
         </button>
 
         <div class="collapse navbar-toggleable-md" id="navbarCollapse">
-          
-            <div class="space", class="text-muted"><%= link_to "Home", root_path, class: 'nav-item' %></div>
-            <div class="space", class="text-muted"><%= link_to "About", about_me_path, class: 'nav-item' %></div>
-            <div class="space", class="text-muted"><%= link_to "Contact", contact_path, class: 'nav-item' %></div>
-            <div class="space", class="text-muted"><%= link_to "Blog", blogs_path, class: 'nav-item' %></div>
-            <div class="space", class="text-muted"><%= login_helper 'nav-item' %></div>
+            <%= nav_helper 'text-muted space', 'div' %>
+
+            <div class="text-muted space"><%= login_helper %></div>
           
         </div>
     </nav>
