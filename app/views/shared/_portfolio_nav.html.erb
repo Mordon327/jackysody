@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="masthead">
+
+    <nav class="navbar navbar-light bg-faded rounded mb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-toggleable-md" id="navbarCollapse">
+          
+            <div class="space", class="text-muted"><%= link_to "Home", root_path, class: 'nav-item' %></div>
+            <div class="space", class="text-muted"><%= link_to "About", about_me_path, class: 'nav-item' %></div>
+            <div class="space", class="text-muted"><%= link_to "Contact", contact_path, class: 'nav-item' %></div>
+            <div class="space", class="text-muted"><%= link_to "Blog", blogs_path, class: 'nav-item' %></div>
+            <div class="space", class="text-muted"><%= login_helper 'nav-item' %></div>
+          
+        </div>
+    </nav>
+  </div>
+</div>
+
+
+
