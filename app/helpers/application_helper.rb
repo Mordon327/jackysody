@@ -48,9 +48,12 @@ module ApplicationHelper
 	def nav_helper style, tag_type
 		nav_links = ''
 		nav_items.each do |item|
-			nav_links << "<#{tag_type}><a href='#{item[:url]}'' class='#{style}'' #{active? item[:url]}>#{item[:title]}</a></#{tag_type}>"
+			if tag_type == 'div'
+				nav_links << "<#{tag_type} class='#{style}'><a href='#{item[:url]}' #{active? item[:url]}>#{item[:title]}</a></#{tag_type}>"
+			else
+				nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style}' #{active? item[:url]}>#{item[:title]}</a></#{tag_type}>"
+			end
 		end
-
 		nav_links.html_safe
 	end
 
