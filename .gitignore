@@ -16,7 +16,11 @@
 /node_modules
 /yarn-error.log
 
+#Ignores byebug history
 .byebug_history
 
 # I don't want to show my secrets
 /config/secrets.yml
+
+# Keep the aws keys from being public
+.env
