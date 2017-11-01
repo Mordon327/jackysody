@@ -24,12 +24,12 @@
         <div id="background"></div>
 
         <%= video_tag(
-            'HardDrivePhotojpeg.mp4',
+            'matrix.mp4',
             id: 'background',
             autoplay: 'true',
             loop: true,
             muted: true,
-            poster: 'background.png'
+            poster: 'matrix_screenshot.png'
           )
           %>
 
@@ -39,7 +39,7 @@
 
 
         <%= render "shared/application_footer" %>
-
+        <%= render "shared/alerts" %>
 
         <%= source_helper("Application") %>
         

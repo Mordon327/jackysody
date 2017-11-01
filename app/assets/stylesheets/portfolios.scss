@@ -1,5 +1,8 @@
 @import "bootstrap";
 @import "jquery-ui";
+@import "gritter";
+
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
@@ -131,3 +134,8 @@ footer p {
   padding: 20px;
 }
 
+.col-md-12 a {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}

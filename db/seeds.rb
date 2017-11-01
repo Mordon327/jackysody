@@ -6,6 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.create!(
+				email: "test@test.com",
+				name: "Admin User",
+				password: "asdfasdf",
+				password_confirmation: "asdfasdf",
+				role: "site_admin"
+			)
+
+puts "1 admin created"
+
 3.times do |topic|
 	Topic.create!(
 		title: "Topic #{topic}"
