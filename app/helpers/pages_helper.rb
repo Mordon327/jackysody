@@ -1,6 +1,5 @@
 module PagesHelper
 	def twitter_parser tweet
-		tweet = "jeffreyguenther: #rails community: Work is started on OpenStack support for ActiveStorage https://t.co/SeSLdDy7jf. Help is welcome."
 		regex = %r{
 	      \b
 	      (
@@ -20,6 +19,5 @@ module PagesHelper
 	    }ix
 
 	    tweet.gsub(regex) { |url| "<a href=#{url} target='_blank'>#{url}</a>" }.html_safe
-	    
 	end
 end
