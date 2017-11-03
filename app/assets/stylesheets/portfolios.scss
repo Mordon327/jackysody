@@ -45,6 +45,11 @@ body {
 
 .card > img {
   margin-bottom: .75rem;
+  max-height: 300px;
+  min-height: 250px;
+  width: auto;
+  padding: 2px;
+  background-color: rgb(186, 205, 255);
 }
 
 .card-text {
