@@ -4,13 +4,8 @@
 	<p>
 		<%= blog.body %>	
 	</p>
-	<% if logged_in?(:site_admin) %>
-	<p class="blog-post-meta">
-		<%= link_to blog.status, toggle_status_blog_path(blog), class: 'btn btn-info' %> 		
-		<%= link_to 'Edit', edit_blog_path(blog), class: 'btn btn-success' %> 
-		<%= link_to 'Delete Post', blog, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
-	</p>
-	<% end %>
+
+	<%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
 	
 	
 </div>
