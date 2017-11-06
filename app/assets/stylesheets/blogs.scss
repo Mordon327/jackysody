@@ -80,10 +80,6 @@ h6, .h6 {
   border-left: .3rem solid transparent;
 }
 
-.comment-card > .card {
-  margin-top: 15px;
-}
-
 /*
  * Blog name and description
  */
@@ -181,12 +177,19 @@ h6, .h6 {
   font-size: 2.5em;
 }
 
+.comment-card > .card {
+  margin-top: 15px;
+}
+
 .comment-attribute {
   font-size: .8em;
 }
 
-
-
+.center-this {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

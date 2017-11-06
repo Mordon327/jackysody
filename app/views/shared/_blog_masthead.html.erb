@@ -1,7 +1,11 @@
   <div class="blog-header">
     <div class="container">
-      <h1 class="blog-title">My Blog</h1>
-      <p class="lead blog-description">An example blog template built with Bootstrap.</p>
-      <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    	
+      <h2 class="blog-title center-this">My Blog Site</h2>
+
+      <p class="lead blog-description center-this">My blog site is made with Ruby on Rails and styled with bootstrap. The blogs not only have all of the necessary functionality that they require, but each blog is set up with real time comments so you never have to refresh the page inorder to get the latest messages from your friends.</p>
+
+      <div class="center-this"><%= link_to 'Write a New Blog', new_blog_path, class: 'btn btn-outline-primary' if logged_in?(:site_admin) %></div>
+
     </div>
   </div>
