@@ -27,15 +27,23 @@ a:hover {
  * Base structure
  */
 
+
+
+
 html,
 body {
   height: 100%;
 }
 
 body {
+  font-family: 'Lora', serif;
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
+  font-family: 'Bitter', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -135,6 +143,7 @@ body {
  .card-block {
  color: black;
  text-align: left;
+ margin: 0%;
  }
 
  .card-block a {
@@ -145,19 +154,6 @@ body {
   margin-top: 10%;
   margin-bottom: 13%;
  }
-
-.card-block-no-center {
-  color: black;
-  padding: 5%;
-}
-
-.card-block-no-center a {
-  color: black;  
-}
-
-.card-block-no-center a:hover {
-  color: blue;  
-}
 
  .auth-links a {
  color: black;
@@ -175,6 +171,10 @@ body {
   margin-bottom: 10%;
 }
 
+.skill {
+  text-align: left;
+  padding: 20px;
+}
 
 .app-nav span {
   margin-left: 15px;
@@ -183,6 +183,22 @@ body {
 
 .app-nav a {
   margin-top: 15px;
+}
+
+.app-card-container {
+  color: black;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.profile-image {
+  border: 1px solid grey;
 }
 
 #background {
@@ -255,3 +271,23 @@ body {
     width: 75rem;
   }
 }
+
+.card-block {
+  float: left;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  border-width: 2px;
+  border-radius: 5px;
+  border-top: solid;
+  border-right: solid;
+  border-bottom: solid;
+  border-left: solid;
+}
+
+
+
+
+
+
+

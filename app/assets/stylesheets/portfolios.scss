@@ -2,12 +2,14 @@
 @import "jquery-ui";
 @import "gritter";
 
-
 body {
+  font-family: 'Lora', serif;
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
-
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
+  font-family: 'Bitter', serif;
+}
 
 .jumbotron {
   padding-top: 6rem;
@@ -37,7 +39,7 @@ body {
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -45,8 +47,6 @@ body {
 
 .card > img {
   margin-bottom: .75rem;
-  max-height: 300px;
-  min-height: 250px;
   width: auto;
   padding: 2px;
   background-color: rgb(186, 205, 255);
@@ -69,11 +69,6 @@ footer p {
   background-color: black;
 }
 
-
-
-.navbar-light {
-  
-}
 
 
 .navbar {
@@ -144,3 +139,5 @@ footer p {
   justify-content: center; 
   align-items: center;
 }
+
+

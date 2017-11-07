@@ -1,141 +1,68 @@
 
+<div class="app-card-container">
+	<div class="card">
+		<h1>About Me</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-image' %>
+				
+				<div class="skills">
+					<% @skills.each do |skill| %>
+					<h4><%= skill.title %></h4>
+					<div class="skill">
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped bg-warning"
+							role="progressbar" 
+							aria-valuenow="<%= skill.percent_utilized %>" 
+							aria-valuemax="100" 
+							style="width: <%= skill.percent_utilized %>%">
+							
+						</div>
+					</div></div>
+					<% end %>
+					<!-- end skills -->
+				</div>
 
-<h1>About Me</h1>
-
-<hr>
-
-<div class="row">
-	<div class="col-md-4">
-		<%= image_tag "profile.jpg", width: 300, alt: "profile image" %>
-	</div>
-	<div class="col-md-8">
-		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	</div>
-</div>profile
+			</div>
+			<div class="col-md-8">
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
+				<p>
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#jobHistory" aria-expanded="false" aria-controler="jobHistory">
+						Job History
+					</button>
 
 
+					<button class="btn btn-success" type="button" data-toggle="collapse" data-target="#education" aria-expanded="false" aria-controler="education">
+						Education
+					</button>
+				</p>
+				<p>
+					<div class="collapse" id="jobHistory">
+						<div class="card-two card-block">
+							jobs 1
+						</div>
+						<div class="card-two card-block">
+							jobs 2
+						</div>
+						<div class="card-two card-block">
+							jobs 3
+						</div>
+					</div>
 
-
-
-
-<div class="card">
-	<div class="card-block-no-center">
-<div>
-	<h1>Shane Soderstrom</h1>
-	<p>Highland, Utah | 801-857-4399 | soderstromshane@gmail.com</p>
-</div>
-<h3>Education</h3>
-<div class="row">
-
-<div class="col-md-4">
-	<h5>Associate of Science, General Education Emphasis</h5>
-	<div>
-		<p>Snow College, Ephraim, Utah</p>
-	</div>
-	<div>
-		<p>May 2014</p>
-	</div>
-	<p>Phi Theta Kappa | GPA 3.75 | Graduated Cum Laude</p>
-</div>
-
-<div class="col-md-4">
-	<h5>Bachelor of Science in Computer Science, Computer Science Emphasis</h5>
-	<div>
-		<p>Utah Valley University, Orem, Utah</p>
-	</div>
-	<div>
-		<p>Anticipated Graduation, Spring 2021</p>
-	</div>
-	<p>GPA 3.43 | Dean’s List spring 2016</p>
-</div>
-
-<div class="col-md-4">
-	<h5>Associate of Applied Science, Traditional Building Skills Emphasis</h5>
-	<div>
-		<p>Snow College, Ephraim, Utah</p>
-	</div>
-	<div>
-		<p>May 2014</p>
-	</div>
-	<p>Phi Theta Kappa | GPA 3.75 | Graduated Cum Laude</p>
-</div>
-</div>
-
-<div>
-	<h3>Related Coursework</h3>
-	<p>Fundamentals of Programming – Emphasis on C#</p>
-	<p>Object-Oriented Programming – Emphasis on C++</p>
-	<p>Computer Organization and Architecture – Emphasis on low level programming</p>
-	<p>Computer Networks</p>
-	<p>Discrete Mathematics</p>
-	<p>Web Programming One – Emphasis on front end programming</p>
-	<p>Intro to Algorithms and Data Structures – Emphasis on C++</p>
-</div>
-
-<div>
-	<h3>Projects</h3>
-	<p><strong><a href="#">Dynamic Sequence</a></strong> – Created from scratch a dynamic array that imitates the Standard Template Library’s vector class. Contains its own copy, delete, add, remove, and locate functions without the use of the STL.</p>
-	<p><strong><a href="#">Linked List</a></strong> – Created from scratch a linked list that manipulates Nodes. Imitates the Standard Template Library’s List container. Contains its own push, pop, delete, size, and copy functions without the use of the STL.</p>
-</div>
-
-<div>
-	<h3>Programming Languages</h3>
-	<div class="row">
-		<div class="col-md-4">
-			<p>C#</p>
-			<p>C++</p>
-			<p>LC3</p>
-			<p>XML</p>
-		</div>
-		<div class="col-md-4">
-			<p>Ruby</p>
-			<p>Rails</p>
-			<p>HTML</p>
-			<p>CSS</p>
-		</div>
-		<div class="col-md-4">
-			<p>PostgreSQL</p>
-			<p>Java Script</p>
-			<p>JQuery</p>
-			<p>Json</p>
+					<div class="collapse" id="education">
+						<div class="card-block">
+							class 1
+						</div>
+						<div class="card-block">
+							class 2
+						</div>
+						<div class="card-block">
+							class 3
+						</div>
+					</div>
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
-<h3>Employment History</h3>
-<div class="row">
-	
-	<div class="col-md-8">
-	<p>Paper Wizard, Laser Technician, Orem, Utah<br>
-	Rubicon Contractors, Construction Worker, Centerville, Utah<br>
-	Snow College, Cabinet Shop Aid, Ephraim, Utah<br>
-	Boy Scouts of America, Rifle Range Director, Ogden, Utah<br>
-	State of the Art Restoration, Construction Worker, Salt Lake City, Utah<br>
-</p>
-</div>
-<div class="col-md-4">
-	<p>
-		January 2015 – September 2017<br>
-		April – December 2014<br>
-		August 2013 – May 2014<br>
-		June – August 2013<br>
-		May – August 2012
-	</p>
-</div>
-</div>
-
-<div>
-	<h3>Additional Accomplishments</h3>
-	<p>Two-year mission, The LDS Church, Charleston, West Virginia</p>
-	<p>Three black belts in: Bushi Kai Karate, Shotokan Karate, and Bushi Ban Karate</p>
-</div>
-
-</div>
-</div>
-
-
-
-
-
-
-
-
