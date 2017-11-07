@@ -27,15 +27,23 @@ a:hover {
  * Base structure
  */
 
+
+
+
 html,
 body {
   height: 100%;
 }
 
 body {
+  font-family: 'Lora', serif;
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
+  font-family: 'Bitter', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -135,6 +143,7 @@ body {
  .card-block {
  color: black;
  text-align: left;
+ margin: 0%;
  }
 
  .card-block a {
@@ -162,6 +171,10 @@ body {
   margin-bottom: 10%;
 }
 
+.skill {
+  text-align: left;
+  padding: 20px;
+}
 
 .app-nav span {
   margin-left: 15px;
