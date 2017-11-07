@@ -54,6 +54,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 
 .card-text {
   font-size: 85%;
+  width: 100%;
+  margin: 5px;
+  color: black;
+  border-width: 1px;
+  border-radius: 5px;
+  border-top: solid;
+  border-right: solid;
+  border-bottom: solid;
+  border-left: solid;
 }
 
 footer {
@@ -138,6 +147,10 @@ footer p {
   display: flex; 
   justify-content: center; 
   align-items: center;
+}
+
+.space {
+  margin: 4px 2px 2px 2px;
 }
 
 
