@@ -146,19 +146,6 @@ body {
   margin-bottom: 13%;
  }
 
-.card-block-no-center {
-  color: black;
-  padding: 5%;
-}
-
-.card-block-no-center a {
-  color: black;  
-}
-
-.card-block-no-center a:hover {
-  color: blue;  
-}
-
  .auth-links a {
  color: black;
  }
@@ -183,6 +170,22 @@ body {
 
 .app-nav a {
   margin-top: 15px;
+}
+
+.app-card-container {
+  color: black;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.profile-image {
+  border: 1px solid grey;
 }
 
 #background {
