@@ -48,6 +48,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 .card > img {
   margin-bottom: .75rem;
   width: auto;
+  max-height: 350px;
+  max-width: 300px;
   padding: 2px;
   background-color: rgb(186, 205, 255);
 }
@@ -159,4 +161,8 @@ footer p {
 
 .card-block-two {
   padding: 2%;
+}
+
+.size {
+  max-width: 300px;
 }

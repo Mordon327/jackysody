@@ -85,7 +85,9 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
-
+  
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_cable.allowed_request_origins = ['https://soderstromshane-portfolio.herokuapp.com', 'http://soderstromshane-portfolio.herokuapp.com']
+  config.action_cable.url = "wss://soderstromshane-portfolio.herokuapp.com/cable"
 end
