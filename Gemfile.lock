@@ -203,7 +203,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redcarpet (3.4.0)
-    redis (4.0.1)
+    redis (3.3.5)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -294,7 +294,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.4)
   redcarpet (~> 3.4)
-  redis (~> 4.0, >= 4.0.1)
+  redis (~> 3.3)
   sass-rails (~> 5.0)
   soderstrom_view_tool (~> 0.1.0)
   spring
@@ -309,4 +309,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.0
