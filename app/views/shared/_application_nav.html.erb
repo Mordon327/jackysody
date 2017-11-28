@@ -1,9 +1,15 @@
-<div class="masthead clearfix">
-	<div class="inner">
-		<h3 class="masthead-brand"><%= current_user.name %></h3>
-		<nav class="nav nav-masthead app-nav">
-			<%= nav_helper 'nav-link', 'span' %>
-	   		<%= login_helper 'nav-link' %>
-		</nav>
-	</div>
+<div class="container">
+  <div class="masthead centered">
+    <nav class="navbar navbar-light bg-faded rounded mb-3">
+        <button class="navbar-toggler center-this" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-toggleable-md" id="navbarCollapse">
+            <%= nav_helper 'text-muted space', 'div' %>
+            <div class="text-muted space"><%= login_helper %></div>
+        </div>
+    </nav>
+  </div>
 </div>
+
