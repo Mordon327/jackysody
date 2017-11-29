@@ -37,7 +37,6 @@ body {
 
 body {
   font-family: 'Lora', serif;
-
   text-align: center;
 }
 
@@ -78,6 +77,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
   background-image: -o-linear-gradient(top, #f7f7f7 0%,#eee 100%);
   background-image: linear-gradient(to bottom, #f7f7f7 0%,#eee 100%);
   border: 1px solid #e5e5e5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +109,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 .space a {    
   color: #868e96;
   padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,6 +303,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 }
 
 .bordered {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,6 +326,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 }
 
 .center-this {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
