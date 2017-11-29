@@ -89,19 +89,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 }
 
 @media (min-width: 768px) {
-  /*.navbar-nav {
+  .navbar-nav {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-  }*/
+  }
 
-/*  .navbar-nav .nav-item {  
+  .navbar-nav .nav-item {  
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-  }*/
+  }
 }
 
 .space a {    
