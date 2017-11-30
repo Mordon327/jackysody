@@ -25,32 +25,35 @@
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
-
-        <div id="background"></div>
-
         <%= video_tag(
-            'matrix.mp4',
-            id: 'background',
-            autoplay: 'true',
-            loop: true,
-            muted: true,
-            poster: 'matrix_screenshot.png'
+          'matrix.mp4',
+          id: 'background',
+          autoplay: 'true',
+          loop: true,
+          muted: true,
+          poster: 'matrix_screenshot.png'
           )
           %>
 
-        <%= render "shared/application_nav" %>
-
-        <%= yield %>
 
 
-        <%= render "shared/application_footer" %>
 
-      
-        
 
+          <div class="row">
+            <div class="col-md-3">
+              <%= render "shared/application_nav" %>
+            </div>
+            <div class="col-md-9">
+              <%= yield %>
+            </div>
+          </div>
+
+
+
+          <%= render "shared/application_footer" %>
+        </div>
       </div>
     </div>
-  </div>
 
-</body>
-</html>
+  </body>
+  </html>

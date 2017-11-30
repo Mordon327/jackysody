@@ -36,10 +36,6 @@ module ApplicationHelper
 				title: 'Contact',
 			},
 			{
-				url: resume_path,
-				title: 'Resume'
-			},
-			{
 				url: blogs_path,
 				title: 'Blog',
 			},

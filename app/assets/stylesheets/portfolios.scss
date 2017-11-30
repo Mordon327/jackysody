@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "navbar.scss";
 
 body {
   font-family: 'Lora', serif;
@@ -76,39 +77,6 @@ footer p {
   margin-bottom: .25rem;
 }
 
-.collapse show {
-  background-color: black;
-}
-
-
-
-.navbar {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7),to(#eee));
-  background-image: -webkit-linear-gradient(top, #f7f7f7 0%,#eee 100%);
-  background-image: -o-linear-gradient(top, #f7f7f7 0%,#eee 100%);
-  background-image: linear-gradient(to bottom, #f7f7f7 0%,#eee 100%);
-  border: 1px solid #e5e5e5;
-  display: flex;
-  justify-content: center;
-  Align-items: center;
-  padding: 10px;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .navbar-nav .nav-item {  
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
-}
 
 /* custom */
 
@@ -116,21 +84,7 @@ footer p {
 .center-this {
   display: flex;
   justify-content: center;
-  Align-items: center;
-}
-
-.space a {    
-  color: #868e96;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  Align-items: center;
-}
-
-.space a:hover {
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: bold;
-  text-decoration: none;
+  align-items: center;
 }
 
 .portfolio-form {
@@ -149,10 +103,6 @@ footer p {
   display: flex; 
   justify-content: center; 
   align-items: center;
-}
-
-.space {
-  margin: 4px 2px 2px 2px;
 }
 
 .card-block {
