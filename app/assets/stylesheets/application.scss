@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "navbar.scss";
 
 
 
@@ -72,64 +73,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 /*
  * Header
  */
-.navbar {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7),to(#eee));
-  background-image: -webkit-linear-gradient(top, #f7f7f7 0%,#eee 100%);
-  background-image: -o-linear-gradient(top, #f7f7f7 0%,#eee 100%);
-  background-image: linear-gradient(to bottom, #f7f7f7 0%,#eee 100%);
-  border: 1px solid #e5e5e5;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.navbar-toggler {
-  margin-left: 35px;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .navbar-nav .nav-item {  
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -ms-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
-}
-
-.space a {    
-  color: #868e96;
-  padding: 15px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.space a:hover {
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.space {
-  margin: 4px 2px 2px 2px;
-}
-
 
 
 /*
@@ -188,15 +131,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 .skill {
   text-align: left;
   padding: 20px;
-}
-
-.app-nav span {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.app-nav a {
-  margin-top: 15px;
 }
 
 .app-card-container {

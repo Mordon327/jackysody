@@ -28,7 +28,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
-gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'soderstrom_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 1.8'
@@ -46,4 +46,5 @@ gem 'redis', '~> 3.3'
 #allow syntax highlighting
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem 'popper_js', '~> 1.12', '>= 1.12.5'
 ruby "2.4.0"
