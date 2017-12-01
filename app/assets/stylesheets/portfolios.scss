@@ -48,8 +48,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 .card > img {
   margin-bottom: .75rem;
   width: auto;
-  max-height: 350px;
-  max-width: 300px;
   padding: 2px;
   background-color: rgb(186, 205, 255);
 }
@@ -90,7 +88,7 @@ footer p {
   border: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
-  align-items: center;
+  Align-items: center;
   padding: 10px;
 }
 
@@ -121,20 +119,16 @@ footer p {
 
 .space a {    
   color: #868e96;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  Align-items: center;
 }
 
 .space a:hover {
   color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
   text-decoration: none;
-}
-
-.space {
-  margin: 4px 2px 2px 2px;
 }
 
 .portfolio-form {
@@ -155,14 +149,11 @@ footer p {
   align-items: center;
 }
 
+.size {
+  max-width: 300px;
+}
+
 .card-block {
   padding: 10%;
 }
 
-.card-block-two {
-  padding: 2%;
-}
-
-.size {
-  max-width: 300px;
-}

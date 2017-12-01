@@ -11,39 +11,27 @@
   <%= favicon_link_tag 'favicon/favicon.ico' %>
 
   <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
-  
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
-  
   <link href="https://fonts.googleapis.com/css?family=Bitter|Lora" rel="stylesheet">
 </head>
 
 <body>
-  <div class="card-block-two">
-    <h3 class="text-muted h3"><%= current_user.name %></h3>
-
-
-
-
+  <h3 class="text-muted h3">Shane Soderstrom</h3>
   <div class="row">
-    <div class="col-md-3">
-      <%= render 'shared/application_nav' %>
+    <div class="col-md-2">
+      <%= render 'shared/portfolio_nav' %>
     </div>
     <div class="col-md-8">
       <%= render 'shared/portfolio_masthead' %>
     </div>
 
-    <div class="col-md-1">
+    <div class="col-md-2">
       <!-- Used for spacing -->
     </div>
   </div>
-</div>
-
-
-
-
-
+  
   <%= yield %>
 
   <%= render 'shared/portfolio_footer' %>
