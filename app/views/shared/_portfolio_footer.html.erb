@@ -1,6 +1,6 @@
 <footer class="text-muted">
 	<div>
-		<p class="center-this"><%= link_to "create a New Portfolio Item", new_portfolio_path, class: 'btn btn-success' %></p>
+		<p class="center-this"><%= link_to "create a New Portfolio Item", new_portfolio_path, class: 'btn btn-success' if logged_in?(:site_admin) %></p>
 		<p class="center-this"><%= link_to "View All Portfolio Items", portfolios_path, class: 'btn btn-primary' %>&nbsp;
 		<a href="#" class="btn btn-secondary">Back to top</a>
 		</p>
